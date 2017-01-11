@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Error #1 - The Wrong Redirect
+title: User Error &#35;1 - The Wrong Redirect
 ---
 
 "Caress the detail, the divine detail" - Vladimir Nabokov
