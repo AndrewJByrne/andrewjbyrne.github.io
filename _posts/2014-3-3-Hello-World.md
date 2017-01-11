@@ -9,8 +9,30 @@ I found myself spinning on a problem recently trying to authenticate a Xamarin F
 
 # The Situation #
 I am building an app that uses Azure Mobile App services on the backend to store data in a table. Up until now, while playing around on my dev box, I've been storing everything anonymously. Up to this point there was no way,and no need for me, to map data back to a particular user. In early stages of my prototyping I ignore goals such as world domination and test out ideas as simply as possible. That is a rapid phase of my work and I quickly moved on to actually considering that more than one person may indeed use this gem of an app some day. Long store short, to make sure users only get access to their own data, the data needs to be identifiable per user. I therefore want some form of user identity and this is where authentication comes in. 
+
+[Mention Azure Portal, App registration piortal and following instructions]
+
+
+[With auth setup on both the backend and client side, I took my app for a spin]
+
+[Expectation]
+
+[Actuals]
+
 ![Authentication dialog disappearing](/images/auth-dialog-disappears.gif)
+
+[Web page image too]
+
+# The solution - get your redirect URI right! #
+
+[ Show article note ]
+
+[Show what I changed]
+
+[Show result]
+
+
 
 
 # Last Word #
-It turns out there is no godo substitute than reading the instructions. 
+It turns out there is no good substitute than reading the instructions. 
