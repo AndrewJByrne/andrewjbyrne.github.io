@@ -1,9 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: User Error #1 - The Wrong Redirect
 ---
 
-
+"Caress the detail, the divine detail" - Vladimir Nabokov
 
 ![Authentication dialog disappearing](/images/auth-dialog-disappears.gif)
 
