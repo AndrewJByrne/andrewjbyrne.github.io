@@ -35,4 +35,4 @@ I am building an app that uses Azure Mobile App services on the backend to store
 
 
 # Last Word #
-It turns out there is no good substitute than reading the instructions. 
+It turns out there is no good substitute for reading the instructions. 
