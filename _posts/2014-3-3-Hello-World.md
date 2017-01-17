@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Error &#35;1 - The Wrong Redirect
+title: User Error &#35;1 - The Wrong Redirect (a.k.a The Case of the Disappearing Auth Dialog)
 ---
 
 "Caress the detail, the divine detail" - Vladimir Nabokov
