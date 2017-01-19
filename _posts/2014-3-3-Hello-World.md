@@ -8,9 +8,9 @@ title: User Error &#35;1 - The Wrong Redirect (a.k.a The Case of the Disappearin
 I found myself spinning on a problem recently trying to authenticate a Xamarin Forms app I am building. I should have heeded Mr. Nabakov's wise words because, as you will find out and as is usually the case, this was user error on my behalf. 
 
 # The Situation #
-My app uses Azure Mobile App services on the backend to store data in a table. Up until now, while playing around on my dev box, I've been storing everything anonymously. By storing records without a user identity at this point, I'm obviously not mapping data back to a particular user. In early stages of my prototyping I ignore goals such as world domination and test out ideas as simply as possible. That is the rapid phase of my work and I quickly moved on to actually considering that more than one person may indeed use this gem of an app some day. Long story short, I want to introduce some form of user identity to make sure users only get access to their own data. This is where user authentication comes in. 
+My app uses Azure Mobile App services on the backend to store data in a table. Up until now, while playing around on my dev box, I've been storing everything anonymously. By storing records without a user identity at this point, I'm obviously not mapping data back to a particular user. In the early stages of my prototyping I ignore goals such as world domination and test out ideas as simply as possible. That is the rapid phase of my work and I quickly moved on to actually considering that more than one person may indeed use this gem of an app some day. Long story short, I want to introduce some form of user identity to make sure users only get access to their own data. This is where user authentication comes in. 
 
-[Mention Azure Portal, App registration piortal and following instructions]
+ With Azure App App Services, many different providers are supported including Azure Active Directory, Facebook, Google and Twitter. For this app, I chose to Microsoft Account as the authentication provider. This means that anyone with a Microsoft account can log into my app from a device and the app will have a unique identifier for that authenticated user. The Azure documentation walks you through setting up authentication and I followed the instructions given in the article [How to configure your App Service application to use Microsoft Account login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication)
 
 
 [With auth setup on both the backend and client side, I took my app for a spin]
@@ -36,3 +36,6 @@ My app uses Azure Mobile App services on the backend to store data in a table. U
 
 # Last Word #
 It turns out there is no good substitute for reading the instructions. 
+
+# References #
+[How to configure your App Service application to use Microsoft Account login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication)
