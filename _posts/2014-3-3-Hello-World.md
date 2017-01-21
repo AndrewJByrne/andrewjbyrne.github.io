@@ -18,7 +18,7 @@ With auth setup on both the backend and my client, I took my app for a spin. My 
 <img  src="/images/auth-dialog-disappears.gif" alt="Authentication dialog disappearing"/>
 </p>
 
-The preceding animation illustrates that I was close to seeing a dialog, but not close enough. When I tap the **login** button in my app an authentication dialog appears but then disappears abruptly before we see all the information and before having a chance to interact with it. 
+The preceding animation illustrates that I was close to seeing a dialog, but not close enough. When I tap the **login** button in my app an authentication dialog appears but then disappears abruptly before we see all the information and before having a chance to interact with it. :confused:
 
 
 [With auth setup on both the backend and client side, I took my app for a spin]
