@@ -20,6 +20,30 @@ With auth setup on both the backend and my client, I took my app for a spin. My 
 
 The preceding animation illustrates that I was close to seeing a dialog, but not close enough. When I tap the **login** button in my app an authentication dialog appears but then disappears abruptly before we see all the information and before having a chance to interact with it. :confused:
 
+You can also check whether authentication is working in your app by navigating to a url that looks like this ```http://myapp.azurewebsites.net/microsoftaccount```. Doing so for my app revealed the following sad news:
+
+<p align="center">
+<img src="/images/bp-1/browser-error.png" alt="Browser error"/>
+</p>
+
+(Just noticed how many tabs I have open in that browser. :astonished:)
+
+<p align="center">
+<img src="/images/bp-1/redirect-note.png" alt="Browser error"/>
+</p>
+
+<p align="center">
+<img src="/images/bp-1/wrong-uri.png" alt="Browser error"/>
+</p>
+
+<p align="center">
+<img src="/images/bp-1/right-uri.png" alt="Browser error"/>
+</p>
+
+<p align="center">
+<img src="/images/bp-1/browser-success.png" alt="Browser error"/>
+</p>
+
 
 [With auth setup on both the backend and client side, I took my app for a spin]
 
