@@ -14,7 +14,9 @@ In Azure App App Services, you can authenticate using a myriad of supported prov
 
 With auth setup on both the backend and my client, I took my app for a spin. My expectation, was that the user would be presented with a dialog to sign in using their Microsoft Account. Alas, this happened:
 
-![Authentication dialog disappearing](/images/auth-dialog-disappears.gif)
+<p align="center">
+<img  src="/images/auth-dialog-disappears.gif" alt="Authentication dialog disappearing"/>
+</p>
 
 The preceding animation illustrates that I was close to seeing a dialog, but not close enough. As you can see, an authentication dialog appears but then disappears abruptly before we see all the information and before having a chance to interact with it. 
 
