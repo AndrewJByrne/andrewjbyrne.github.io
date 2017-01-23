@@ -27,6 +27,7 @@ You can also check whether authentication is working in your app by navigating t
 </p>
 
 (Just noticed how many tabs I have open in that browser. :astonished:)
+The error message is very misleading, giving me the impression that my account was experiencing issues. Given that I was able to read email, browse to OneDrive and do so much more at the time, I knew this was a kind of red herring.  My usual next step in a situation like this is to debug but for some reason I was compelled to go back and read the instructions I had followed to get to this point. I was glad I did. 
 
 <p align="center">
 <img src="/images/bp-1/redirect-note.png" alt="Browser error"/>
