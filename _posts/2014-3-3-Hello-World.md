@@ -29,43 +29,34 @@ You can also check whether authentication is working in your app by navigating t
 (Just noticed how many tabs I have open in that browser. :astonished:)
 The error message is very misleading, giving me the impression that my account was experiencing issues. Given that I was able to read email, browse to OneDrive and do so much more at the time, I knew this was a kind of red herring.  My usual next step in a situation like this is to debug but for some reason I was compelled to go back and read the instructions I had followed to get to this point. I was glad I did. 
 
+Step 6 of the instructions in [How to configure your App Service application to use Microsoft Account login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication) contains a very important note as shown in the following snip from those pages:
+
 <p align="center">
 <img src="/images/bp-1/redirect-note.png" alt="Browser error"/>
 </p>
 
+Going back to my app registration I noticed that my redirect Uri was defined as follows:
 <p align="center">
 <img src="/images/bp-1/wrong-uri.png" alt="Browser error"/>
 </p>
+
+As you can see, I did not append ```/.auth/login/microsoftaccount/callback``` to the end of my Uri. So, I went ahead and remedied that as follows:
 
 <p align="center">
 <img src="/images/bp-1/right-uri.png" alt="Browser error"/>
 </p>
 
+Now when I try to login through the browser I get the following wonderful message.
+
 <p align="center">
 <img src="/images/bp-1/browser-success.png" alt="Browser error"/>
 </p>
 
+The ultimate test of course is to run my app again and try to login. Drum roll please ....
 
-[With auth setup on both the backend and client side, I took my app for a spin]
-
-[Expectation]
-
-[Actuals]
-
-
-
-[Web page image too]
-
-# The solution - get your redirect URI right! #
-
-[ Show article note ]
-
-[Show what I changed]
-
-[Show result]
-
-
-
+<p align="center">
+<img  src="/images/auth-diag-working.gif" alt="Authentication dialog working"/>
+</p>
 
 # Last Word #
 It turns out there is no good substitute for reading the instructions. 
