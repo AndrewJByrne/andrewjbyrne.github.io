@@ -23,7 +23,7 @@ The preceding animation illustrates that I was close to seeing a dialog, but not
 You can also check whether authentication is working in your app by navigating to a url that looks like this ```http://myapp.azurewebsites.net/microsoftaccount```. Doing so for my app revealed the following sad news:
 
 <p align="center">
-<img src="/images/bp-1/browser-error.png" alt="Browser error"/>
+<img src="/images/bp-1/browser-error.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
 (Just noticed how many tabs I have open in that browser. :astonished:)
@@ -32,30 +32,30 @@ The error message is very misleading, giving me the impression that my account w
 Step 6 of the instructions in [How to configure your App Service application to use Microsoft Account login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication) contains a very important note as shown in the following snip from those pages:
 
 <p align="center">
-<img src="/images/bp-1/redirect-note.png" alt="Browser error"/>
+<img src="/images/bp-1/redirect-note.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
 Going back to my app registration I noticed that my redirect Uri was defined as follows:
 <p align="center">
-<img src="/images/bp-1/wrong-uri.png" alt="Browser error"/>
+<img src="/images/bp-1/wrong-uri.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
 As you can see, I did not append ```/.auth/login/microsoftaccount/callback``` to the end of my Uri. So, I went ahead and remedied that as follows:
 
 <p align="center">
-<img src="/images/bp-1/right-uri.png" alt="Browser error"/>
+<img src="/images/bp-1/right-uri.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
 Now when I try to login through the browser I get the following wonderful message.
 
 <p align="center">
-<img src="/images/bp-1/browser-success.png" alt="Browser error"/>
+<img src="/images/bp-1/browser-success.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
 The ultimate test of course is to run my app again and try to login. Drum roll please ....
 
 <p align="center">
-<img  src="/images/auth-diag-working.gif" alt="Authentication dialog working"/>
+<img  src="/images/auth-diag-working.gif" width="50%" height="50%" alt="Authentication dialog working"/>
 </p>
 
 # Last Word #
