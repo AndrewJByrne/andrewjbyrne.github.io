@@ -18,23 +18,24 @@ With auth now configured on both the backend and my client, I took my app for a 
 <img  src="/images/auth-dialog-disappears.gif" alt="Authentication dialog disappearing"/>
 </p>
 
-The preceding animation illustrates that I was close to seeing a dialog, but not close enough. When I tap the **login** button in my app an authentication dialog appears but then disappears abruptly before we see all the information and before having a chance to interact with it. :confused:
+The preceding animation illustrates that I was close to seeing a dialog, but not close enough. When I tap the **login** button in my app an authentication dialog appears briefly but then disappears abruptly before having a chance to interact with it. :confused:
 
-You can also check whether authentication is working in your app by navigating to a url that looks like this ```http://myapp.azurewebsites.net/microsoftaccount```. Doing so for my app revealed the following sad news:
+You can also check whether authentication is working in your app by navigating to a url that looks like this ```http://myapp.azurewebsites.net/microsoftaccount``` where ```myapp``` is the name of your app. Doing so for my app revealed the following sad news:
 
 <p align="center">
 <img src="/images/bp-1/browser-error.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
 (Just noticed how many tabs I have open in that browser. :astonished:)
-The error message is very misleading, giving me the impression that my account was experiencing issues. Given that I was able to read email, browse to OneDrive and do so much more at the time, I knew this was a kind of red herring.  My usual next step in a situation like this is to debug but for some reason I was compelled to go back and read the instructions I had followed to get to this point. I was glad I did. 
+The error message is very misleading, giving me the impression that my account was experiencing issues. Given that I was able to read email, browse to OneDrive and do so much more at the time, I knew this was a red herring.  My usual next step in a situation like this is to start debugging but, for some reason, I was compelled to go back and read the instructions I had followed to get to this point. I was glad I did. 
 
-Step 6 of the instructions in [How to configure your App Service application to use Microsoft Account login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication) contains a very important note as shown in the following snip from those pages:
+Step 6 of the instructions in [How to configure your App Service application to use Microsoft Account login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication) contains a very important note that I've copied here for you to read:
 
 <p align="center">
 <img src="/images/bp-1/redirect-note.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
+It is very clear about the format of redirect Uri that is expected. 
 Going back to my app registration I noticed that my redirect Uri was defined as follows:
 <p align="center">
 <img src="/images/bp-1/wrong-uri.png" width="60%" height="60%" alt="Browser error"/>
@@ -45,6 +46,7 @@ As you can see, I did not append ```/.auth/login/microsoftaccount/callback``` to
 <p align="center">
 <img src="/images/bp-1/right-uri.png" width="60%" height="60%" alt="Browser error"/>
 </p>
+That looks much more like the Uri guidance from the previous note. 
 
 Now when I try to login through the browser I get the following wonderful message.
 
