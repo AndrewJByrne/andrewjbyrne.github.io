@@ -51,7 +51,7 @@ That looks much more like the Uri guidance from the previous note.
 Now when I try to login through the browser I get the following wonderful message.
 
 <p align="center">
-<img src="/images/bp-1/browser-success.png" width="60%" height="60%" alt="Browser error"/>
+<img src="/images/bp-1/browser-success-2.png" width="60%" height="60%" alt="Browser error"/>
 </p>
 
 The ultimate test of course is to run my app again and try to login. Drum roll please ....
