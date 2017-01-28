@@ -60,8 +60,10 @@ The ultimate test of course is to run my app again and try to login. Drum roll p
 <img  src="/images/auth-diag-working.gif" width="50%" height="50%" alt="Authentication dialog working"/>
 </p>
 
+Success - a complete authentication dialog that will accept my Microsoft Account credentials, ask for my consent and then log me in. Once I have signed in successfully, I have a unique user Id that I can then use as a key in my table of data to identify data as belonging to a partiular user. 
+
 # Last Word #
-It turns out there is no good substitute for reading the instructions. 
+It turns out there is no good substitute for reading the instructions. I could have probably just tweeted out my mistake instead of writing this post, but I do have my reasons for telling you this story. Yes, I could have avoided all of this by being more attentive but a common issue we all face is that error messages and instructions can dig holes deeper for us. I'm a software engineer and content developer by trade, so I empathize when these experiences don't tie together seamlessly. 
 
 # References #
 [How to configure your App Service application to use Microsoft Account login](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-microsoft-authentication)
